@@ -1,0 +1,3 @@
+[submodule "kicad/midi-interface/arduino-kicad-library"]
+	path = kicad/midi-interface/arduino-kicad-library
+	url = https://github.com/Alarm-Siren/arduino-kicad-library
