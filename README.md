@@ -1,16 +1,15 @@
 # Projektaufgaben
-## Github 
-- Ordnerstruktur auf Github
-- Abgabe mit Dokumentation
-
 ## Idee: Drumcomputer aus Recycleter Orgel
-- Yamaha D80
+- Modell: Yamaha D80
+
+## Platinenlayout 
+- siehe kicad/layout.md
 
 ## Planung
 - Module
-    - Stromversorgung
-    - Midi Interface
-    - ggf. Drumsteuerung
+    - Stromversorgung -> Idealerweise auf Lochstreifenplatine
+    - Midi Interface -> Mit Arduino Uno
+    - ggf. standalone Drumsteuerung
     - Kick
     - Snare
     - Hi-Hat
@@ -26,11 +25,6 @@
 - ()[https://en.wikipedia.org/wiki/Eurorack]
 - ()[https://doepfer.de/a100_man/a100m_e.htm]
 - ()[https://doepfer.de/a100_man/a100t_e.htm]
-
-## Platine
-- 0.21mm Leiterabstand
-- PCBDesign mit Kicad
-- gefräste Platine
 
 # Prüfungsleistung
 - Präsentation
