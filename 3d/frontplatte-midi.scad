@@ -13,32 +13,39 @@ HOLE_OFFSET_X = 7.5;
 HOLE_RADIUS = 1.6;
 // Number of Facets for the Holes. 
 // A reasonably high number should be picked or else holes might end up to small
-HOLE_FACETS = 12;
+HOLE_FACETS = 48;
+FONT_FACETS = 48;
 
 // Parameters for the 3.5mm Jacks
-JACK_X_SPACING = 10.16;
-JACK_Y_SPACING = 16.485;
+JACK_X_SPACING = 10.668;
+JACK_Y_SPACING = 16.480;
 JACK_HOLE_RADIUS = 3.2;
 
 MIDI_CUTOUT_RADIUS = 7.6;
 
 // Font Sizes
 FONT_SIZE_L=10;
-FONT_SIZE_M=2;
+FONT_SIZE_M=3.5;
 FONT_DEPTH=1.5;
-FONT="Cantarell Light";
+FONT="Corber:style=Regular";
+
+//PLATE_COLOR=[0.1, 0.1, 0.1];
+//TEXT_COLOR=[1.0, 1.0, 1.0];
+TEXT_COLOR=[0.1, 0.1, 0.1];
+TEXT_HEIGHT=1;
+PLATE_COLOR=[1.0, 1.0, 1.0];
+
+FONT_DISTANCE=2;
+MIDI_CONNECTOR_MARGIN=2.5;
+AUDIO_CONNECTOR_MARGIN=1.5;
+
 
 difference() {
     // The main plate
-    color([0.9, 0.9, 0.9])
-    cube([WIDTH, HEIGHT, THICKNESS]);
+    translate([0.15,0,0])
+    color(PLATE_COLOR)
+    cube([WIDTH-0.15, HEIGHT, THICKNESS]);
     
-    // Header Text
-    color([0.2,0.2,0.2])
-    translate([WIDTH / 2, HEIGHT - FONT_SIZE_L - HOLE_OFFSET_Y, THICKNESS-FONT_DEPTH]){
-        linear_extrude(FONT_DEPTH + 0.1)
-        text("MIDI", size=FONT_SIZE_L, halign="center", font=FONT);
-    }
     
     // The four mounting holes
     for (x =[HOLE_OFFSET_X, WIDTH-HOLE_OFFSET_X]){
@@ -49,7 +56,9 @@ difference() {
             };
         }
     };
-    translate([WIDTH / 2, 2/3 * HEIGHT, -0.1]){
+    
+    // The MIDI Port
+    translate([WIDTH / 2, 4/5 * HEIGHT, -0.1]){
         // center hole
         cylinder(h = THICKNESS+0.2, r=MIDI_CUTOUT_RADIUS, center=false, $fn=2*HOLE_FACETS);
         translate([-11.1,0,0]){
@@ -59,30 +68,57 @@ difference() {
         translate([11.1, 0, 0]){
             cylinder(h = THICKNESS+0.2, r=1.7, center=false, $fn=HOLE_FACETS);
         };
-        translate([0, 12, THICKNESS]){
-            color([0.2, 0.2, 0.2])
-            linear_extrude(FONT_DEPTH + 0.1)
-            text("MIDI IN", size=FONT_SIZE_M, halign="center", font=FONT);
-        }
     }
     
     // The 3.5mm Jacks
     translate([
         (WIDTH - 3 * JACK_X_SPACING) / 2,
-        15,
+        15 +  2 *JACK_Y_SPACING,
         0
     ]){
         for (i = [0:3]){
             for (j=[0:2]){
-                translate([i*JACK_X_SPACING, j*JACK_Y_SPACING, 0]){
+                translate([i*JACK_X_SPACING, -j*JACK_Y_SPACING, 0]){
                     cylinder(h=2*THICKNESS+0.2, r=JACK_HOLE_RADIUS, center=true, $fn=HOLE_FACETS);
-                    translate([0, 6, THICKNESS-0.1]){
-                        color([0.2, 0.2, 0.2])
-                        linear_extrude(FONT_DEPTH + 0.1)
-                        text(str("OUT", (4*(4-j)+i)-7), size=FONT_SIZE_M, halign="center", font=FONT);
-                    }
                 }
             }
         }
     }
 }
+
+
+
+    // Header Text
+ color(TEXT_COLOR)
+ translate([WIDTH / 2, HEIGHT - FONT_SIZE_L - HOLE_OFFSET_Y - 2, THICKNESS-0.1]){
+    linear_extrude(TEXT_HEIGHT)
+    text("midi", size=FONT_SIZE_L, halign="center", font=FONT, $fn=FONT_FACETS);
+}
+// TEXT
+translate([WIDTH / 2, 4/5 * HEIGHT - 15, THICKNESS-0.1]){
+       color(TEXT_COLOR)
+       linear_extrude(TEXT_HEIGHT)
+       text("midi in", size=FONT_SIZE_M, halign="center", font=FONT, $fn=FONT_FACETS);
+   }
+
+translate([
+    (WIDTH - 3 * JACK_X_SPACING) / 2,
+    15 +  2 *JACK_Y_SPACING,
+    0
+]){
+    for (i = [0:3]){
+        for (j=[0:2]){
+            translate([i*JACK_X_SPACING, -j*JACK_Y_SPACING, 0]){
+                translate([0, JACK_HOLE_RADIUS + AUDIO_CONNECTOR_MARGIN + FONT_DISTANCE, THICKNESS]){
+                    color(TEXT_COLOR)
+                    linear_extrude(TEXT_HEIGHT)
+                    text(str((4*j)+i+1), size=FONT_SIZE_M, halign="center", font=FONT, $fn=FONT_FACETS);
+                }
+            }
+        }
+    }}
+    color(TEXT_COLOR)
+    translate([WIDTH / 2 ,64,THICKNESS]){
+      linear_extrude(TEXT_HEIGHT)
+      text("trigger outputs", size=FONT_SIZE_M, halign="center", font=FONT, $fn=FONT_FACETS);
+    }
