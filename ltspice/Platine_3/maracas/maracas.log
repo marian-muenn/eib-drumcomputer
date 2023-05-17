@@ -1,0 +1,31 @@
+Circuit: * C:\Users\Dmitr\OneDrive\Desktop\eib-drumcomputer\eib-drumcomputer\ltspice\Platine_3\maracas\maracas.asc
+
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+WARNING: Node OUTPUT is floating.
+
+WARNING: Less than two connections to node output.  This node is used by r5.
+WARNING: Less than two connections to node n001.  This node is used by v3.
+WARNING: Less than two connections to node nc_01.  This node is used by r6.
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed May 17 10:27:12 2023
+Total elapsed time: 3.167 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 139240
+traniter = 139224
+tranpoints = 69336
+accept = 48945
+rejected = 20391
+matrix size = 22
+fillins = 5
+solver = Normal
+Avg thread counts: 1.0/1.0/1.0/1.0
+Matrix Compiler1: 1.21 KB object code size  0.9/0.7/[0.5]
+Matrix Compiler2: 1.57 KB object code size  0.6/1.0/[0.6]
+
