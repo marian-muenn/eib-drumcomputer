@@ -1,5 +1,5 @@
 TE=5.08;
-WIDTH= 21  * TE;
+WIDTH= 21.5  * TE;
 HEIGHT=132;
 THICKNESS=10;
 EURORACK_HEIGHT=128.5;
@@ -9,7 +9,7 @@ COMB_MARGIN = 8;
 // Mounting Hole Offset from the top / bottom edge
 HOLE_OFFSET_Y = 3 + ( HEIGHT - EURORACK_HEIGHT)/ 2 ;
 // Mounting Hole offset from the sides
-HOLE_OFFSET_X = 7.5;
+HOLE_OFFSET_X = TE;
 HOLE_RADIUS = 1.6;
 // Number of Facets for the Holes. 
 // A reasonably high number should be picked or else holes might end up to small
@@ -80,7 +80,7 @@ intersection(){
             cube([WIDTH, COMB_MARGIN, THICKNESS]);
         }
         // The four mounting holes
-        for (x =[HOLE_OFFSET_X, WIDTH-HOLE_OFFSET_X]){
+        for (x =[HOLE_OFFSET_X, WIDTH-HOLE_OFFSET_X - 0.5*TE]){
             for (y =[HOLE_OFFSET_Y, HEIGHT-HOLE_OFFSET_Y]){
                 color([1,0,0])
                 translate([x, y, -0.1]){
