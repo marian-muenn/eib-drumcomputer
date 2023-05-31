@@ -1,0 +1,15 @@
+digraph finite_state_machine {
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+	rankdir=LR;
+	node [shape = doublecircle]; reset;
+	node [shape = circle]; ready note_on note_off data1 data2
+	 reset -> ready [label = "init"];
+	 ready -> note_on [label = "status_note_on"];
+	 ready -> ready [label = "data pat cat pb cc sysex"];
+     note_on -> data1 [label = "data"];
+     data1 -> data2 [label= "data"]
+     data2 -> ready [label= "pat cat pb cc sysex"]
+     ready -> note_off [label = "status_note_off"]
+}
