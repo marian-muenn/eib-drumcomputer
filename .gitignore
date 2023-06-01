@@ -1,1 +1,13 @@
 tags
+*.lot 
+*.fls
+*.blg
+*.bcf
+*.aux
+*.lof
+*.fdb_latexmk
+*.toc
+main.run.xml
+main.log
+main.out
+main.pdf
