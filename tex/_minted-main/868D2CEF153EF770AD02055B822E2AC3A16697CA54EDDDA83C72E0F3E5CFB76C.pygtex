@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c}{\PYGZpc{} This is a comment}
-\PYG{n+nb}{disp}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Hello World from MATLAB!\PYGZdq{}}\PYG{p}{);}
-\PYG{n+nb}{disp}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}I am using the \PYGZdq{}}\PYG{n}{tango}\PYG{l+s}{\PYGZdq{} style to print this code in beautiful colors\PYGZdq{}}\PYG{p}{);}
-\end{Verbatim}
