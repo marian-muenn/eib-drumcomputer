@@ -4,26 +4,58 @@ Warning: Multiple definitions of model "2scr375p" Type: BJT
 Warning: Multiple definitions of model "bc857b" Type: BJT
 Warning: Multiple definitions of model "bc847c" Type: BJT
 Warning: Multiple definitions of model "bc847b" Type: BJT
-WARNING: Node OUTPUT is floating.
+WARNING: Less than two connections to node mic_cont.  This node is used by r6.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 0.00100083
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195312
+Gmin = 0.00100083
+vernier = 0.000976562
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
 
-WARNING: Less than two connections to node output.  This node is used by r5.
-Direct Newton iteration for .op point succeeded.
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 53.7879%
+Source Step = 61.3636%
+Source Step = 68.9394%
+Source Step = 76.5152%
+Source Step = 84.0909%
+vernier = 0.375
+Source Step = 92.4242%
+Source stepping succeeded in finding the operating point.
 
-Date: Wed May 17 13:07:37 2023
-Total elapsed time: 1.906 seconds.
+
+Date: Sat Jun  3 12:03:17 2023
+Total elapsed time: 25.037 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 104811
-traniter = 104795
-tranpoints = 51445
-accept = 35411
-rejected = 16034
-matrix size = 18
-fillins = 1
+totiter = 468412
+traniter = 466192
+tranpoints = 217968
+accept = 150442
+rejected = 67526
+matrix size = 107
+fillins = 79
 solver = Normal
 Avg thread counts: 1.0/1.0/1.0/1.0
-Matrix Compiler1: 906 bytes object code size  1.2/0.9/[0.7]
-Matrix Compiler2: 1.29 KB object code size  0.6/0.9/[0.5]
+Matrix Compiler1: 8.86 KB object code size  6.1/4.0/[2.4]
+Matrix Compiler2: 10.08 KB object code size  3.2/3.8/[1.9]
 
