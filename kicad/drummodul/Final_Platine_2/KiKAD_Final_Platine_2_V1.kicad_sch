@@ -1511,7 +1511,7 @@
     (property "Value" "50k" (at 267.716 115.57 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 267.716 109.982 0)
+    (property "Footprint" "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" (at 267.716 109.982 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 267.716 109.982 0)
@@ -1521,7 +1521,7 @@
     (pin "2" (uuid 7ea05f9b-22d0-482b-a46f-6fa635a5656f))
     (pin "3" (uuid d307f3ab-23a7-41cd-a1aa-ac189723528b))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "RV2") (unit 1)
         )
@@ -1546,7 +1546,7 @@
     )
     (pin "1" (uuid eb8a5da5-f908-402c-816a-f66f5144d959))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR015") (unit 1)
         )
@@ -1586,7 +1586,7 @@
     (pin "8" (uuid adebbd56-3d4c-43b7-8b7e-1c9bb5ffdd03))
     (pin "9" (uuid a0e56bd2-0ae1-442a-8918-f5c58d1a0ab9))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "J1") (unit 1)
         )
@@ -1611,7 +1611,7 @@
     )
     (pin "1" (uuid 7e173b81-50eb-492a-b2b4-3b1fae6855c8))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR013") (unit 1)
         )
@@ -1638,7 +1638,7 @@
     (pin "2" (uuid e6a25ef4-f3a0-4d57-a3b5-15c3a84c1244))
     (pin "3" (uuid d8be3783-adbd-4149-8047-f28ac2f6e895))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "Q1") (unit 1)
         )
@@ -1663,7 +1663,7 @@
     )
     (pin "1" (uuid 42dddab5-996e-49d5-b06a-520066db5ea0))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR04") (unit 1)
         )
@@ -1689,7 +1689,7 @@
     (pin "1" (uuid 9b0c4fe8-d17e-401b-8939-e2b5e4b9fcf3))
     (pin "2" (uuid 6755cc43-4b49-4bc9-ac35-b063fa427130))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "C3") (unit 1)
         )
@@ -1714,7 +1714,7 @@
     )
     (pin "1" (uuid 5c2bce80-3f23-4781-8ce4-cff24addd212))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR01") (unit 1)
         )
@@ -1739,7 +1739,7 @@
     )
     (pin "1" (uuid 91fb8545-4f5b-4b37-be78-8220d08d3f21))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR020") (unit 1)
         )
@@ -1765,7 +1765,7 @@
     (pin "1" (uuid 47649fa7-124e-4a4e-a6ef-a1dd8169188e))
     (pin "2" (uuid f5a13857-9b4a-4f89-99b2-5d5af329bd9e))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "R14") (unit 1)
         )
@@ -1791,7 +1791,7 @@
     (pin "1" (uuid e9e8d613-8c14-4054-ae29-7651541b3238))
     (pin "2" (uuid c1be86c0-7a8c-49ed-8bc0-f0f0bf7397d6))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "C1") (unit 1)
         )
@@ -1817,7 +1817,7 @@
     (pin "1" (uuid a0c314af-e57e-4779-a314-821759afaf32))
     (pin "2" (uuid fd60eef7-9ef5-45ce-9103-e299b73b1168))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "C7") (unit 1)
         )
@@ -1843,7 +1843,7 @@
     (pin "1" (uuid f7eabca6-e35c-4722-9e39-a4ded1f45256))
     (pin "2" (uuid 2276f94f-9831-4de6-a7aa-b481c43c8ef2))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "R15") (unit 1)
         )
@@ -1868,7 +1868,7 @@
     )
     (pin "1" (uuid 25909305-2431-4f3d-b92e-00bb20bf588a))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR06") (unit 1)
         )
@@ -1894,7 +1894,7 @@
     (pin "1" (uuid 13d74bac-dca2-4259-bafb-2133f7f160f5))
     (pin "2" (uuid 9cec948b-c7b9-4935-bf02-a06c362ee353))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "R13") (unit 1)
         )
@@ -1919,7 +1919,7 @@
     )
     (pin "1" (uuid ff781481-7391-4027-8e95-cdf880cae52a))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR07") (unit 1)
         )
@@ -1944,7 +1944,7 @@
     )
     (pin "1" (uuid ae1b762e-839d-464a-b173-3420ebb9c3e4))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR017") (unit 1)
         )
@@ -1961,7 +1961,7 @@
     (property "Value" "Conn_01x03_Pin" (at 51.6636 58.9788 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 52.832 53.594 0)
+    (property "Footprint" "Connector_JST:JST_EH_S3B-EH_1x03_P2.50mm_Horizontal" (at 52.832 53.594 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 52.832 53.594 0)
@@ -1971,7 +1971,7 @@
     (pin "2" (uuid 2fbd96ce-993e-445c-afca-718531cb07a6))
     (pin "3" (uuid 08086e46-513a-482d-8f8f-e4e7b496e492))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "J4") (unit 1)
         )
@@ -1997,7 +1997,7 @@
     (pin "1" (uuid 77b76024-37b0-4283-86f7-4323fd15cf4c))
     (pin "2" (uuid 62249cc5-6e46-4738-bf91-3590dd9d8f53))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "R10") (unit 1)
         )
@@ -2022,7 +2022,7 @@
     )
     (pin "1" (uuid 031b8b31-8d71-4d8f-860d-298d48ffef16))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR09") (unit 1)
         )
@@ -2033,13 +2033,13 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 139.3444 113.1824 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6dedcbc6-5f81-46eb-b321-90d9d966de0c)
-    (property "Reference" "Noise_Input" (at 139.9794 109.22 0)
+    (property "Reference" "Noise_Input1" (at 139.9794 109.22 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Pin" (at 139.9794 111.76 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 139.3444 113.1824 0)
+    (property "Footprint" "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" (at 139.3444 113.1824 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 139.3444 113.1824 0)
@@ -2048,9 +2048,9 @@
     (pin "1" (uuid cd81ce8c-87b7-4424-80ac-8d79d697b228))
     (pin "2" (uuid f2017102-e249-46db-a23a-44ed88006239))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "Noise_Input") (unit 1)
+          (reference "Noise_Input1") (unit 1)
         )
       )
     )
@@ -2059,13 +2059,13 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 12.954 51.308 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 723c7509-13ac-478d-94ff-826ec6de52e0)
-    (property "Reference" "MicrontrollerInput" (at 21.082 59.436 0)
+    (property "Reference" "MicrontrollerInput1" (at 21.082 59.436 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x02_Pin" (at 21.082 61.976 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 12.954 51.308 0)
+    (property "Footprint" "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" (at 12.954 51.308 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 12.954 51.308 0)
@@ -2074,9 +2074,9 @@
     (pin "1" (uuid 36d62870-3b4b-4e13-8df1-f8b5e31c373f))
     (pin "2" (uuid f5a7f7c2-1f0a-4918-a348-54ca6a0702b8))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "MicrontrollerInput") (unit 1)
+          (reference "MicrontrollerInput1") (unit 1)
         )
       )
     )
@@ -2103,7 +2103,7 @@
     (pin "3" (uuid be198407-9e50-425b-a232-4d16988110ba))
     (pin "4" (uuid 5fca2dc1-a075-402f-9de2-440bf071316f))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "U2") (unit 1)
         )
@@ -2128,7 +2128,7 @@
     )
     (pin "1" (uuid 7492f8cd-8c0c-4096-9947-91d498103942))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR014") (unit 1)
         )
@@ -2154,7 +2154,7 @@
     (pin "1" (uuid 265221b0-efcc-4365-b665-951ff69548f2))
     (pin "2" (uuid 0de5a9c1-4d69-45b6-a7ed-2a537efc8017))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "C4") (unit 1)
         )
@@ -2180,7 +2180,7 @@
     (pin "1" (uuid 66f935bd-1b07-4571-aea9-eadd42fce6c2))
     (pin "2" (uuid 8ad8af8a-1c72-4a6e-91b0-05d56d4865a6))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "C5") (unit 1)
         )
@@ -2205,7 +2205,7 @@
     )
     (pin "1" (uuid e0097710-70f3-4dd6-aaaa-a54b4fd5e888))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR012") (unit 1)
         )
@@ -2216,13 +2216,13 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 280.67 107.95 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 88a57386-5251-4f96-8f75-8e01a8f87108)
-    (property "Reference" "Output" (at 278.892 101.092 0)
+    (property "Reference" "Output1" (at 278.892 101.092 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Conn_01x02_Pin" (at 281.94 108.585 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 280.67 107.95 0)
+    (property "Footprint" "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" (at 280.67 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 280.67 107.95 0)
@@ -2231,9 +2231,9 @@
     (pin "1" (uuid e96d4968-41d4-460c-9bb6-1228dea4453a))
     (pin "2" (uuid 9270c718-7eb4-4722-b410-b7b143a7657e))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "Output") (unit 1)
+          (reference "Output1") (unit 1)
         )
       )
     )
@@ -2257,7 +2257,7 @@
     (pin "1" (uuid 4e5fb94f-5b44-478f-8e19-d40c55e2d9ab))
     (pin "2" (uuid 79924e00-b297-4f84-b2f8-377946655ed6))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "C9") (unit 1)
         )
@@ -2282,7 +2282,7 @@
     )
     (pin "1" (uuid dc82b62c-066e-4549-a8d5-a5a226922711))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR08") (unit 1)
         )
@@ -2314,7 +2314,7 @@
     (pin "6" (uuid e35b7655-2211-40c8-a9f6-f06e913b0721))
     (pin "7" (uuid 18509cc4-095e-4021-85a9-d09e08d7fb49))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "U1") (unit 1)
         )
@@ -2331,7 +2331,7 @@
     (property "Value" "1" (at 209.55 104.2162 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 208.0768 102.3112 0)
+    (property "Footprint" "Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder" (at 208.0768 102.3112 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 208.0768 102.3112 0)
@@ -2340,7 +2340,7 @@
     (pin "1" (uuid bfb3cc87-718d-4fab-8b72-9de616fbbbbd))
     (pin "2" (uuid 2daee400-1fe1-4f95-89bc-7c5520271306))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "L1") (unit 1)
         )
@@ -2365,7 +2365,7 @@
     )
     (pin "1" (uuid cfaf9863-1796-4bff-879e-0300f09eb1f2))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR018") (unit 1)
         )
@@ -2391,7 +2391,7 @@
     (pin "1" (uuid 3ae9e5f5-936c-4a9a-be13-d08044428476))
     (pin "2" (uuid 32abe9fb-492d-403a-99ef-a94b8e08cb56))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "R7") (unit 1)
         )
@@ -2416,7 +2416,7 @@
     )
     (pin "1" (uuid 58c1252d-ed0e-47dd-95d1-ad30a6ba49fd))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR03") (unit 1)
         )
@@ -2441,7 +2441,7 @@
     )
     (pin "1" (uuid 52ee416a-cc96-452a-815c-95a84c28d62c))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR010") (unit 1)
         )
@@ -2467,7 +2467,7 @@
     (pin "1" (uuid 94fd072f-6b55-42d4-9d44-8457e2225482))
     (pin "2" (uuid 69e697b9-b3bd-43cf-9cdf-371795ef287c))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "R1") (unit 1)
         )
@@ -2493,7 +2493,7 @@
     (pin "1" (uuid edc1a009-98fb-453a-822f-fe7df1ee5ab0))
     (pin "2" (uuid 5347e384-9911-441f-a934-344d50ec3703))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "R3") (unit 1)
         )
@@ -2519,7 +2519,7 @@
     (pin "1" (uuid a3f98783-55f3-4678-ab03-d32916f64c78))
     (pin "2" (uuid d30dc320-1a85-4a16-bd88-cd28014b5c24))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "R2") (unit 1)
         )
@@ -2545,7 +2545,7 @@
     (pin "1" (uuid 6698809f-fffd-4e7e-aba0-a6a55c2c6fd0))
     (pin "2" (uuid 3d8eb05c-62e1-496d-94f8-ee1a9fda4c74))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "R4") (unit 1)
         )
@@ -2571,7 +2571,7 @@
     (pin "1" (uuid 8bb7c94e-84a6-422e-b1c4-fb99339ce090))
     (pin "2" (uuid f8034415-9ec3-4009-b8c2-b330e05a7eb2))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "R21") (unit 1)
         )
@@ -2597,7 +2597,7 @@
     (pin "1" (uuid 38615d1b-2f26-4d7e-8281-4c41164b409d))
     (pin "2" (uuid e9b86efb-5be8-4040-9e97-a1f4f3720a21))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "C2") (unit 1)
         )
@@ -2624,7 +2624,7 @@
     (pin "2" (uuid 24133ba8-a6eb-40ad-aeb6-b215aa491a4a))
     (pin "3" (uuid bd99c1b9-db96-499a-be46-a62b467b8038))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "Q2") (unit 1)
         )
@@ -2656,7 +2656,7 @@
     (pin "1" (uuid 97df8cb2-abdd-487b-afd1-3e9bc58a1c8a))
     (pin "2" (uuid ce732442-23ee-4ce9-8c23-0b254a2cec0e))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "D2") (unit 1)
         )
@@ -2688,7 +2688,7 @@
     (pin "1" (uuid 1e575280-9af8-414e-a83d-79739c057476))
     (pin "2" (uuid 8751473a-46a0-4443-99dd-a54acea5bd18))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "D1") (unit 1)
         )
@@ -2714,7 +2714,7 @@
     (pin "1" (uuid 0df889a6-8c00-451c-ab3b-13c8ae5cb73e))
     (pin "2" (uuid b400452d-b577-4211-aaac-45a9d7af0771))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "R20") (unit 1)
         )
@@ -2739,7 +2739,7 @@
     )
     (pin "1" (uuid 9cb19219-b892-4def-b828-80ccd6f481e6))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR05") (unit 1)
         )
@@ -2765,7 +2765,7 @@
     (pin "1" (uuid 275059f5-b62e-4063-9fd5-c9de67fae9b7))
     (pin "2" (uuid 8dc7475e-2d01-41e1-b334-543898adbe36))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "C8") (unit 1)
         )
@@ -2790,7 +2790,7 @@
     )
     (pin "1" (uuid 5a2d4da0-51cf-4845-aaa5-0f7a544b8332))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR016") (unit 1)
         )
@@ -2816,7 +2816,7 @@
     (pin "1" (uuid 91654587-1e85-492a-9759-3ff1be57c3b4))
     (pin "2" (uuid eaca29eb-e396-4967-aa1f-d6a49fae96bd))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "C10") (unit 1)
         )
@@ -2841,7 +2841,7 @@
     )
     (pin "1" (uuid 48fd62c0-33f1-4ca3-aed3-2f61fe203020))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR011") (unit 1)
         )
@@ -2866,7 +2866,7 @@
     )
     (pin "1" (uuid f41ebd16-e398-4b20-acc3-9adc15fc0fd8))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR019") (unit 1)
         )
@@ -2891,7 +2891,7 @@
     )
     (pin "1" (uuid 53b862f2-c8a0-4bc9-8bea-19cff748a785))
     (instances
-      (project "KiKAD_Final_Platine_1_V1"
+      (project "KiKAD_Final_Platine_2_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
           (reference "#PWR02") (unit 1)
         )

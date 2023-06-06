@@ -632,6 +632,7 @@
     )
   )
 
+
   (junction (at 94.742 122.936) (diameter 0) (color 0 0 0 0)
     (uuid 179c929c-64b8-4353-9aea-d197ab536f2e)
   )
@@ -1047,13 +1048,13 @@
   (symbol (lib_id "Connector:Conn_01x02_Pin") (at 138.176 128.016 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 88a57386-5251-4f96-8f75-8e01a8f87108)
-    (property "Reference" "Output" (at 136.398 121.158 0)
+    (property "Reference" "Output1" (at 136.398 121.158 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Conn_01x02_Pin" (at 139.446 128.651 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 138.176 128.016 0)
+    (property "Footprint" "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" (at 138.176 128.016 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 138.176 128.016 0)
@@ -1064,7 +1065,7 @@
     (instances
       (project "KiKAD_Final_Platine_Noise_V1"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "Output") (unit 1)
+          (reference "Output1") (unit 1)
         )
       )
     )
