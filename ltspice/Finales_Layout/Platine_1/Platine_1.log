@@ -32,26 +32,60 @@ Gmin stepping failed
 Starting source stepping with srcstepmethod=0
 Source Step = 3.0303%
 Source Step = 33.3333%
-Source Step = 63.6364%
-Source Step = 93.9394%
+Source Step = 51.8939%
+Source Step = 52.4621%
+Source Step = 52.9356%
+Source Step = 53.4091%
+Source Step = 53.8826%
+Source Step = 54.3561%
+vernier = 0.0234375
+Source Step = 54.9953%
+Source Step = 55.7055%
+Source Step = 56.4157%
+Source Step = 57.1259%
+Source Step = 57.8362%
+vernier = 0.0351562
+Source Step = 58.7595%
+Source Step = 59.8248%
+Source Step = 60.8902%
+Source Step = 61.9555%
+Source Step = 63.0208%
+vernier = 0.0527344
+Source Step = 64.3525%
+Source Step = 65.9505%
+Source Step = 67.5485%
+Source Step = 69.1465%
+Source Step = 70.7446%
+vernier = 0.0791016
+Source Step = 72.6622%
+Source Step = 75.0592%
+Source Step = 77.4562%
+Source Step = 79.8532%
+Source Step = 82.2502%
+vernier = 0.118652
+Source Step = 85.0068%
+Source Step = 88.6023%
+Source Step = 92.1979%
+Source Step = 95.7934%
+Source Step = 99.3889%
 Source stepping succeeded in finding the operating point.
 
 
-Date: Sat Jun  3 12:25:19 2023
-Total elapsed time: 2.579 seconds.
+Date: Tue Jun  6 18:59:39 2023
+Total elapsed time: 1.314 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 39678
-traniter = 37821
-tranpoints = 13066
-accept = 9552
-rejected = 3514
+totiter = 11508
+traniter = 8377
+tranpoints = 3217
+accept = 2630
+rejected = 587
 matrix size = 117
 fillins = 82
 solver = Normal
-Avg thread counts: 1.0/1.0/1.0/1.0
-Matrix Compiler1: 10.35 KB object code size  8.7/6.1/[2.8]
-Matrix Compiler2: 11.08 KB object code size  4.5/5.5/[3.5]
+Avg thread counts: 1.0/1.1/1.1/1.0
+Matrix Compiler1: 10.27 KB object code size  9.0/4.6/[2.7]
+Matrix Compiler2: 11.08 KB object code size  3.6/3.9/[3.2]
 
