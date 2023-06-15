@@ -1,13 +1,15 @@
+HE=44.45;
 TE=5.08;
-WIDTH= 20.5  * TE - 0.1;
-HEIGHT=132;
-THICKNESS=10;
-EURORACK_HEIGHT=128.5;
 
+WIDTH= 22  * TE;
+HEIGHT=3*HE-2;
+THICKNESS=5;
+EURORACK_HEIGHT=128.5;
+PLUG_POSITION=[15,15,0];
 COMB_MARGIN = 8;
 
 // Mounting Hole Offset from the top / bottom edge
-HOLE_OFFSET_Y = 3 + ( HEIGHT - EURORACK_HEIGHT)/ 2 ;
+HOLE_OFFSET_Y = 4;
 // Mounting Hole offset from the sides
 HOLE_OFFSET_X = TE;
 HOLE_RADIUS = 1.6;
@@ -15,79 +17,41 @@ HOLE_RADIUS = 1.6;
 // A reasonably high number should be picked or else holes might end up to small
 HOLE_FACETS = 48;
 
-module profile(w){
-    PROFILE1 = 8.8;
-    PROFILE2 = 4.4;
-    PROFILE3 = 80;
-    THICKNESS1 = 2.5;
-    THICKNESS2 = 1.2;
-    THICKNESS3 = 3;
-    
-    cube([WIDTH, PROFILE1, THICKNESS1]);
-    translate([0, PROFILE1, 0])
-    cube([WIDTH, PROFILE2, THICKNESS2]);
-    translate([0, PROFILE1 + PROFILE2, 0])
-    cube([WIDTH, PROFILE3, THICKNESS3]);
-    translate([0, HEIGHT, 0])
-    mirror([0, 1,0]){
-        cube([WIDTH, PROFILE1, THICKNESS1]);
-        translate([0, PROFILE1, 0])
-        cube([WIDTH, PROFILE2, THICKNESS2]);
-        translate([0, PROFILE1 + PROFILE2, 0])
-        cube([WIDTH, PROFILE3, THICKNESS3]);
+module plug_positive(){
+  PLUG_HEIGHT=20.5;
+  PLUG_WIDTH=27.5;
+  cube([PLUG_WIDTH + 20, PLUG_HEIGHT + 20, THICKNESS]);
+}
+module plug_negative(){
+  PLUG_HEIGHT=20.5;
+  PLUG_WIDTH=27.5;
+  PLUG_SCREW_DISTANCE = 40;
+  PLUG_SCREWHOLE_RADIUS=1.55;
+  PLUG_SCREW_OFFSET = (PLUG_SCREW_DISTANCE - PLUG_WIDTH) / 2;
+  translate([10,10, -0.1])
+  cube([PLUG_WIDTH, PLUG_HEIGHT, THICKNESS + 0.2]);
+  translate([10 - PLUG_SCREW_OFFSET, 10 + PLUG_HEIGHT / 2, -0.1])
+  cylinder(h = THICKNESS+0.2, r=PLUG_SCREWHOLE_RADIUS, center=false, $fn=HOLE_FACETS);
+  translate([10 + PLUG_WIDTH + PLUG_SCREW_OFFSET, 10 + PLUG_HEIGHT / 2, -0.1])
+  cylinder(h = THICKNESS+0.2, r=PLUG_SCREWHOLE_RADIUS, center=false, $fn=HOLE_FACETS);
+
+}
+ difference(){
+    union(){
+        translate([0.05,0,0])
+        cube([WIDTH-0.1, HEIGHT, THICKNESS]);
+        translate(PLUG_POSITION)
+        plug_positive();
     }
-
-}
-
-module hexagon(l)  {
-	circle(d=l, $fn=6);
-}
-
-// parametric honeycomb  
-module honeycomb(x, y, dia, wall)  {
-	smallDia = dia * cos(30);
-	projWall = wall * cos(30);
-
-	yStep = smallDia + wall;
-	xStep = dia*3/2 + projWall*2;
-
-	difference()  {
-		square([x, y]);
-
-		// Note, number of step+1 to ensure the whole surface is covered
-		for (yOffset = [0:yStep:y+yStep], xOffset = [0:xStep:x+xStep]) {
-			translate([xOffset, yOffset]) {
-				hexagon(dia);
-			}
-			translate([xOffset + dia*3/4 + projWall, yOffset + (smallDia+wall)/2]) {
-				hexagon(dia);
-			}
-		}
-	}
-}
-intersection(){
-    difference(){
-
-        union(){
-          translate([COMB_MARGIN, COMB_MARGIN, 0])
-          linear_extrude(THICKNESS)
-            honeycomb(WIDTH - 2 * COMB_MARGIN, HEIGHT - 2*COMB_MARGIN, 4, 2);
-          cube([WIDTH, COMB_MARGIN, THICKNESS]);
-          cube([COMB_MARGIN, HEIGHT, THICKNESS]);
-          translate([WIDTH-COMB_MARGIN,0, 0])
-            cube([COMB_MARGIN,HEIGHT, THICKNESS]);
-          translate([0, HEIGHT-COMB_MARGIN, 0])
-            cube([WIDTH, COMB_MARGIN, THICKNESS]);
+    translate(PLUG_POSITION)
+    plug_negative();
+    // The four mounting holes
+    for (x =[HOLE_OFFSET_X, WIDTH-HOLE_OFFSET_X]){
+        for (y =[HOLE_OFFSET_Y, HEIGHT-HOLE_OFFSET_Y]){
+            color([1,0,0])
+            translate([x, y, -0.1]){
+            cylinder(h = THICKNESS+0.2, r=HOLE_RADIUS, center=false, $fn=HOLE_FACETS); 
+            };
         }
-        // The four mounting holes
-        for (x =[HOLE_OFFSET_X, WIDTH-HOLE_OFFSET_X + 0.5*TE]){
-            for (y =[HOLE_OFFSET_Y, HEIGHT-HOLE_OFFSET_Y]){
-                color([1,0,0])
-                translate([x, y, -0.1]){
-                    cylinder(h = THICKNESS+0.2, r=HOLE_RADIUS, center=false, $fn=HOLE_FACETS); 
-                };
-            }
-        };
     };
-    profile(WIDTH);
-};
+}

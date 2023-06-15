@@ -18,5 +18,6 @@ int GET_MIDI_TYPE(uint8_t byte){
 
 int main(void){
     uart_init();
+    while (1);
     return 0;
 }
