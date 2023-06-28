@@ -2471,7 +2471,7 @@
   (symbol (lib_id "Device:R") (at 25.4 57.404 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2cf85678-3c4c-480c-a431-ed3be8d96397)
-    (property "Reference" "R6" (at 25.4 52.07 90)
+    (property "Reference" "R31" (at 25.4 52.07 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 25.4 54.61 90)
@@ -2488,7 +2488,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R6") (unit 1)
+          (reference "R31") (unit 1)
         )
       )
     )
@@ -2497,7 +2497,7 @@
   (symbol (lib_id "Device:C_Small") (at 65.278 43.688 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2dce3e63-7b66-4c3e-aacd-74df807eec26)
-    (property "Reference" "C4" (at 63.246 41.402 90)
+    (property "Reference" "C22" (at 63.246 41.402 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 69.088 43.688 90)
@@ -2514,7 +2514,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C4") (unit 1)
+          (reference "C22") (unit 1)
         )
       )
     )
@@ -2652,7 +2652,7 @@
   (symbol (lib_id "Device:R") (at 71.628 25.654 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4fb7ef3c-7371-4ab6-846f-ef3c4c5d42a7)
-    (property "Reference" "R9" (at 73.66 25.019 0)
+    (property "Reference" "R34" (at 73.66 25.019 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 73.66 27.559 0)
@@ -2669,7 +2669,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R9") (unit 1)
+          (reference "R34") (unit 1)
         )
       )
     )
@@ -3096,7 +3096,7 @@
   (symbol (lib_id "Device:C_Small") (at 75.692 60.198 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8d9e2f08-0aff-44e8-a755-34dbb6e8a646)
-    (property "Reference" "C8" (at 70.612 60.1917 90)
+    (property "Reference" "C23" (at 70.612 60.1917 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10p" (at 79.502 60.198 90)
@@ -3113,7 +3113,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C8") (unit 1)
+          (reference "C23") (unit 1)
         )
       )
     )
@@ -3524,7 +3524,7 @@
   (symbol (lib_id "Device:R") (at 54.356 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid aaf717e9-13af-4b52-b2bd-7da8bc2bbe2f)
-    (property "Reference" "R7" (at 57.15 42.545 0)
+    (property "Reference" "R32" (at 57.15 42.545 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 57.15 45.085 0)
@@ -3541,7 +3541,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R7") (unit 1)
+          (reference "R32") (unit 1)
         )
       )
     )
@@ -3680,7 +3680,7 @@
   (symbol (lib_id "Device:R") (at 54.356 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bbdb9e95-ce87-4e06-af80-cddf793dcd67)
-    (property "Reference" "R8" (at 57.15 27.305 0)
+    (property "Reference" "R33" (at 57.15 27.305 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "214" (at 57.15 29.845 0)
@@ -3697,7 +3697,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R8") (unit 1)
+          (reference "R33") (unit 1)
         )
       )
     )
@@ -4088,20 +4088,20 @@
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf" (at 208.788 102.362 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e127a228-2d03-40fa-a783-23127d460624))
-    (pin "2" (uuid 33f151d5-1b8c-4452-9e50-d4e6f8f2ee64))
-    (pin "3" (uuid c80c794d-34d8-4390-9e43-7dfe313c54c7))
-    (pin "5" (uuid 61af1d43-b9a3-479f-850e-57cad3ceef3a))
-    (pin "6" (uuid 987f1f00-883b-4ec1-b0f9-4e3ebac76ec2))
-    (pin "7" (uuid c2301a68-6c9e-4f2e-9a17-544f3d437977))
-    (pin "10" (uuid 2a569fbf-aa9a-44a5-b563-74866d81574d))
-    (pin "8" (uuid 74afa74a-2c89-4639-aaa7-c12f1e9bbacd))
-    (pin "9" (uuid 7ad97186-7f61-44c2-a565-5c4ed8ca211f))
+    (pin "1" (uuid e127a228-2d03-40fa-a783-23127d460625))
+    (pin "2" (uuid 33f151d5-1b8c-4452-9e50-d4e6f8f2ee65))
+    (pin "3" (uuid c80c794d-34d8-4390-9e43-7dfe313c54c8))
+    (pin "5" (uuid 61af1d43-b9a3-479f-850e-57cad3ceef3b))
+    (pin "6" (uuid 987f1f00-883b-4ec1-b0f9-4e3ebac76ec3))
+    (pin "7" (uuid c2301a68-6c9e-4f2e-9a17-544f3d437978))
+    (pin "10" (uuid 2a569fbf-aa9a-44a5-b563-74866d81574e))
+    (pin "8" (uuid 74afa74a-2c89-4639-aaa7-c12f1e9bbace))
+    (pin "9" (uuid 7ad97186-7f61-44c2-a565-5c4ed8ca2120))
     (pin "12" (uuid 22283665-d6ce-41e4-81e8-b87d850e6ea8))
     (pin "13" (uuid 31adea89-d5d7-4978-bcf8-0eeb36217d62))
     (pin "14" (uuid 05e037df-dddf-4928-bb13-04601482ba86))
-    (pin "11" (uuid 7a66728b-c4f4-4a58-abab-4f61edc7ef6b))
-    (pin "4" (uuid 327e6b59-56a6-492f-a512-1fcdd12d4e0b))
+    (pin "11" (uuid 7a66728b-c4f4-4a58-abab-4f61edc7ef6c))
+    (pin "4" (uuid 327e6b59-56a6-492f-a512-1fcdd12d4e0c))
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
@@ -4114,7 +4114,7 @@
   (symbol (lib_id "Device:C_Small") (at 71.628 54.102 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ea5741b5-700b-43aa-93fe-37252feb67fd)
-    (property "Reference" "C10" (at 68.58 54.356 90)
+    (property "Reference" "C21" (at 68.58 54.356 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1p" (at 75.438 54.102 90)
@@ -4131,7 +4131,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C10") (unit 1)
+          (reference "C21") (unit 1)
         )
       )
     )
@@ -4165,7 +4165,7 @@
   (symbol (lib_id "Device:C_Small") (at 97.536 25.654 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f027343b-0c8a-4d4b-af7d-c98a7edfa579)
-    (property "Reference" "C7" (at 97.5297 30.734 90)
+    (property "Reference" "C24" (at 97.5297 30.734 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 97.536 21.844 90)
@@ -4182,7 +4182,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C7") (unit 1)
+          (reference "C24") (unit 1)
         )
       )
     )
