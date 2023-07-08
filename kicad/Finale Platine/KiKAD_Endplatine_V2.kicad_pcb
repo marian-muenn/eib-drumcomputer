@@ -4838,6 +4838,12 @@
 
   (gr_rect (start 100 35) (end 200 115)
     (stroke (width 0.05) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 450a773f-ea77-4bf4-b287-1eff1263058b))
+  (gr_text "Trigger" (at 162.5 55.5) (layer "F.Cu") (tstamp 441000b0-6376-49d7-94aa-2fa8847bc930)
+    (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left bottom))
+  )
+  (gr_text "Noise\n" (at 175 98) (layer "F.Cu") (tstamp 7f94943a-98ee-4c97-a31c-2bfee65cefc2)
+    (effects (font (size 1.5 1.5) (thickness 0.3) bold) (justify left bottom))
+  )
 
   (segment (start 154 72) (end 151.0625 69.0625) (width 0.2) (layer "F.Cu") (net 1) (tstamp 1084bed3-68b8-4dc2-8c47-bfffac84e68f))
   (segment (start 136 99.55) (end 141.1125 99.55) (width 0.2) (layer "F.Cu") (net 1) (tstamp 18994db2-3777-446a-9fea-b746937578dd))
