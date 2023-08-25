@@ -13,3 +13,7 @@ main.log
 main.out
 main.pdf
 compile_commands.json
+*.synctex.gz
+.cache
+.gdb_history
+*.pyg
