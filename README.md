@@ -15,6 +15,7 @@
     - Hi-Hat
     - Mixer
     - Line-Out
+
 ## Eurorack-Standard
 - ()[https://en.wikipedia.org/wiki/Eurorack]
 - ()[https://doepfer.de/a100_man/a100m_e.htm]
@@ -25,4 +26,4 @@
 - Abgabe der Belge bis 17.09.23, 23:59 in OPAL
 - Vorstellung der Projekte am 25.09.23, Uhrzeiten werden noch bekannt gegeben
 - Belege müssen in tex erstellt sein
-- Das Git-Repo sollte natürlich public sein und der Link im Beleg mit angegeben werden.
+- Das Git-Repo sollte public sein und der Link im Beleg mit angegeben werden.
