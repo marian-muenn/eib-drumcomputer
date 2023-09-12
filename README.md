@@ -11,6 +11,10 @@ Das Projekt ist wie folgt strukturiert:
   ./3d/winkel/                                          Winkel zur Platinenmontage
   ./doku/                                               Datenblätter und Spezifikationen
   ./kicad/                                              Platinenentwürfe
+  ./kicad/midi-interface                                Platine des MIDI-Interface-Moduls
+  ./kicad/line-out                                      Schaltplan des Line-Out Moduls
+  ./kicad/drummodul
+  ./kicad/Finale Platine
   ./ltspice/                                            Simulationen
   ./src                                                 Programmcode
   ./tex                                                 Latex Dokumente
