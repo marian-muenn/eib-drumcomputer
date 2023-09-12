@@ -2098,7 +2098,7 @@
   (symbol (lib_id "Device:L") (at 116.84 105.918 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 057176f0-421f-4bef-acd2-a730f65db22e)
-    (property "Reference" "+/L1" (at 114.808 109.22 90)
+    (property "Reference" "+/+/L1" (at 114.554 110.744 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100m" (at 118.872 108.458 90)
@@ -2115,7 +2115,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/L1") (unit 1)
+          (reference "+/+/L1") (unit 1)
         )
       )
     )
@@ -2124,10 +2124,10 @@
   (symbol (lib_id "Device:R") (at 122.047 25.146 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 05fcfb23-6bc6-4dc0-83cc-54298cb5d6d2)
-    (property "Reference" "+/R27" (at 124.079 24.511 0)
+    (property "Reference" "+/+/R27" (at 124.46 24.511 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100k" (at 124.079 27.051 0)
+    (property "Value" "100k" (at 124.46 27.051 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (at 120.269 25.146 90)
@@ -2141,7 +2141,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/R27") (unit 1)
+          (reference "+/+/R27") (unit 1)
         )
       )
     )
@@ -2278,7 +2278,7 @@
   (symbol (lib_id "Device:R") (at 184.404 128.524 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1013347e-48a0-47d5-a374-009307547c62)
-    (property "Reference" "R6/+/+1" (at 179.324 128.524 90)
+    (property "Reference" "+/R6/+1" (at 179.324 128.524 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "3k" (at 181.864 128.524 90)
@@ -2295,7 +2295,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R6/+/+1") (unit 1)
+          (reference "+/R6/+1") (unit 1)
         )
       )
     )
@@ -2304,7 +2304,7 @@
   (symbol (lib_id "Device:R_Potentiometer") (at 208.534 51.816 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 127e1822-2bde-4a08-afcd-b71e08432947)
-    (property "Reference" "+/RV1" (at 205.232 53.594 90)
+    (property "Reference" "+/+/RV1" (at 207.518 56.896 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 202.184 51.816 90)
@@ -2322,7 +2322,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/RV1") (unit 1)
+          (reference "+/+/RV1") (unit 1)
         )
       )
     )
@@ -2357,7 +2357,7 @@
   (symbol (lib_id "Device:R") (at 51.054 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 19bdfe00-efce-435a-b51b-00262beb04c4)
-    (property "Reference" "R7/-/-1" (at 51.054 124.46 90)
+    (property "Reference" "R7/R7/-1" (at 51.054 124.46 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1000k" (at 51.054 127 90)
@@ -2374,7 +2374,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R7/-/-1") (unit 1)
+          (reference "R7/R7/-1") (unit 1)
         )
       )
     )
@@ -2461,7 +2461,7 @@
   (symbol (lib_id "Device:Q_NPN_ECB") (at 119.507 40.894 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 232fcf29-4e39-4aa8-90ef-071366987ad5)
-    (property "Reference" "+/Q4" (at 123.952 40.64 0)
+    (property "Reference" "+/+/Q4" (at 123.952 40.64 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Q_NPN_ECB" (at 117.094 48.26 0)
@@ -2479,7 +2479,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/Q4") (unit 1)
+          (reference "+/+/Q4") (unit 1)
         )
       )
     )
@@ -2511,9 +2511,9 @@
   )
 
   (symbol (lib_id "Device:R") (at 71.882 145.542 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 269773a1-8e0c-40fd-81f6-8ecb9fb237dd)
-    (property "Reference" "C6/R1/C3" (at 73.66 144.907 0)
+    (property "Reference" "C6/C6/C3" (at 60.198 146.304 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1000k" (at 73.66 147.447 0)
@@ -2530,7 +2530,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C6/R1/C3") (unit 1)
+          (reference "C6/C6/C3") (unit 1)
         )
       )
     )
@@ -2539,7 +2539,7 @@
   (symbol (lib_id "Device:R_Potentiometer") (at 26.416 120.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 275853ee-7a6b-4e5f-97b3-e4c5811b3daf)
-    (property "Reference" "RV/+1" (at 28.194 117.348 0)
+    (property "Reference" "R5/+/+1" (at 28.194 117.348 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 24.511 118.618 0)
@@ -2557,7 +2557,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "RV/+1") (unit 1)
+          (reference "R5/+/+1") (unit 1)
         )
       )
     )
@@ -2566,7 +2566,7 @@
   (symbol (lib_id "Device:R") (at 191.643 48.006 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 27d96c8f-c503-4157-a26a-989a272fb54e)
-    (property "Reference" "+/R29" (at 191.897 50.8 90)
+    (property "Reference" "+/+/R29" (at 191.897 50.8 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 191.643 45.466 90)
@@ -2583,7 +2583,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/R29") (unit 1)
+          (reference "+/+/R29") (unit 1)
         )
       )
     )
@@ -2592,7 +2592,11 @@
   (symbol (lib_id "Device:C_Small") (at 227.584 40.386 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 28a260b0-a3ad-4d05-9943-b2bbac1e8cd3)
+<<<<<<< Updated upstream
     (property "Reference" "+/C15" (at 227.076 35.306 90)
+=======
+    (property "Reference" "+/+/C16" (at 225.806 34.544 90)
+>>>>>>> Stashed changes
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u" (at 227.5903 37.084 90)
@@ -2609,7 +2613,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/C15") (unit 1)
+          (reference "+/+/C16") (unit 1)
         )
       )
     )
@@ -2618,7 +2622,7 @@
   (symbol (lib_id "Device:C_Small") (at 123.698 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 28d27924-3d00-4461-aeb7-f503e836685b)
-    (property "Reference" "+/C6/C6" (at 129.4892 95.7072 0)
+    (property "Reference" "+/+/C6" (at 125.73 94.742 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1n" (at 126.9492 99.7013 0)
@@ -2635,7 +2639,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/C6/C6") (unit 1)
+          (reference "+/+/C6") (unit 1)
         )
       )
     )
@@ -2746,7 +2750,7 @@
   (symbol (lib_id "Device:R") (at 84.582 145.034 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 31fb37bb-25b5-4dcc-8a65-d605864d6112)
-    (property "Reference" "C6/R3" (at 86.36 144.399 0)
+    (property "Reference" "+/+/R3" (at 86.36 144.399 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1000k" (at 86.36 146.939 0)
@@ -2763,7 +2767,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C6/R3") (unit 1)
+          (reference "+/+/R3") (unit 1)
         )
       )
     )
@@ -2772,7 +2776,7 @@
   (symbol (lib_id "Device:R") (at 131.826 129.54 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4023e275-7399-4184-b1e4-71612dc4a8b1)
-    (property "Reference" "R2/R5/+1" (at 126.746 129.54 90)
+    (property "Reference" "+/R2/+1" (at 126.746 129.54 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "3k" (at 129.286 129.54 90)
@@ -2789,7 +2793,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R2/R5/+1") (unit 1)
+          (reference "+/R2/+1") (unit 1)
         )
       )
     )
@@ -2798,7 +2802,7 @@
   (symbol (lib_id "Device:R") (at 159.004 104.902 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 46c2e052-77a2-4199-bd58-b376228e51d4)
-    (property "Reference" "R4/+/-1" (at 159.004 100.33 90)
+    (property "Reference" "+/R4/-1" (at 159.004 100.33 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1000k" (at 159.004 102.87 90)
@@ -2815,7 +2819,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R4/+/-1") (unit 1)
+          (reference "+/R4/-1") (unit 1)
         )
       )
     )
@@ -2978,7 +2982,7 @@
   (symbol (lib_id "Device:R") (at 109.22 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 645fb8a0-5eaa-46ce-bf44-ac010bc6170c)
-    (property "Reference" "R14/R4/R4" (at 96.266 100.33 0)
+    (property "Reference" "R14/R14/R4" (at 94.996 100.33 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.5k" (at 103.378 102.362 0)
@@ -2995,7 +2999,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R14/R4/R4") (unit 1)
+          (reference "R14/R14/R4") (unit 1)
         )
       )
     )
@@ -3080,7 +3084,7 @@
   (symbol (lib_id "Device:R") (at 84.582 117.602 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 73c39967-e32e-4a70-9f50-fd03708576e2)
-    (property "Reference" "R11/+/+1" (at 86.36 116.967 0)
+    (property "Reference" "R11/R11/+1" (at 86.36 116.967 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470k" (at 86.36 119.507 0)
@@ -3097,7 +3101,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R11/+/+1") (unit 1)
+          (reference "R11/R11/+1") (unit 1)
         )
       )
     )
@@ -3106,7 +3110,11 @@
   (symbol (lib_id "Device:C") (at 177.927 56.007 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7687d107-286c-4783-bc1f-361e353510f9)
+<<<<<<< Updated upstream
     (property "Reference" "C1" (at 177.8 59.944 90)
+=======
+    (property "Reference" "+/+/C15" (at 177.038 60.198 90)
+>>>>>>> Stashed changes
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u" (at 177.546 62.23 90)
@@ -3123,7 +3131,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C1") (unit 1)
+          (reference "+/+/C15") (unit 1)
         )
       )
     )
@@ -3132,7 +3140,7 @@
   (symbol (lib_id "Device:R") (at 164.084 128.778 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 781a9cde-7a39-464d-935b-8fd16df09012)
-    (property "Reference" "R17/+/+1" (at 159.004 128.778 90)
+    (property "Reference" "+/R17/+1" (at 159.004 128.778 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "3k" (at 161.544 128.778 90)
@@ -3149,7 +3157,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R17/+/+1") (unit 1)
+          (reference "+/R17/+1") (unit 1)
         )
       )
     )
@@ -3183,7 +3191,7 @@
   (symbol (lib_id "Device:C_Small") (at 137.033 35.306 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 802c4fdf-d9cb-4561-95df-e97df599cdbc)
-    (property "Reference" "+/C14" (at 137.1346 38.4048 90)
+    (property "Reference" "+/+/C14" (at 137.1346 38.4048 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u" (at 137.0393 32.004 90)
@@ -3200,7 +3208,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/C14") (unit 1)
+          (reference "+/+/C14") (unit 1)
         )
       )
     )
@@ -3209,7 +3217,7 @@
   (symbol (lib_id "Device:C_Small") (at 127.254 111.506 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 820f1045-086f-4179-af60-88c157073ff8)
-    (property "Reference" "C8/C5/C5" (at 127.3556 114.6048 90)
+    (property "Reference" "C8/C8/C5" (at 124.968 114.808 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u" (at 127.2603 108.204 90)
@@ -3226,7 +3234,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C8/C5/C5") (unit 1)
+          (reference "C8/C8/C5") (unit 1)
         )
       )
     )
@@ -3258,9 +3266,9 @@
   )
 
   (symbol (lib_id "Device:R_Potentiometer") (at 109.22 146.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 88324a49-d1ab-418f-8d0b-03f97ab1fe8f)
-    (property "Reference" "RV1k/-/-1" (at 106.68 145.415 0)
+    (property "Reference" "RV1k/RV1k/-1" (at 127.762 144.272 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 106.68 147.955 0)
@@ -3278,7 +3286,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "RV1k/-/-1") (unit 1)
+          (reference "RV1k/RV1k/-1") (unit 1)
         )
       )
     )
@@ -3316,7 +3324,7 @@
     (property "Reference" "D2" (at 63.246 120.142 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "C5/D2/D2" (at 63.246 127 0)
+    (property "Value" "C5/C5/D2" (at 63.246 127 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" (at 63.246 129.54 0)
@@ -3466,7 +3474,7 @@
   (symbol (lib_id "Device:L") (at 116.84 98.298 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8f83e1ea-9ce7-454b-a659-baf8e7f79c9d)
-    (property "Reference" "+/L2/L2" (at 114.046 101.854 90)
+    (property "Reference" "+/+/L2" (at 114.3 101.092 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100m" (at 119.38 101.092 90)
@@ -3483,7 +3491,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/L2/L2") (unit 1)
+          (reference "+/+/L2") (unit 1)
         )
       )
     )
@@ -3492,10 +3500,10 @@
   (symbol (lib_id "Device:C_Small") (at 71.882 136.652 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 92787d4c-9575-462a-9225-02a0627a899a)
-    (property "Reference" "R9/+/+1" (at 66.802 136.906 90)
+    (property "Reference" "R9/R9/+1" (at 65.024 134.62 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1n" (at 68.072 136.652 90)
+    (property "Value" "1n" (at 67.818 137.16 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 71.882 136.652 0)
@@ -3509,7 +3517,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R9/+/+1") (unit 1)
+          (reference "R9/R9/+1") (unit 1)
         )
       )
     )
@@ -3518,7 +3526,7 @@
   (symbol (lib_id "Device:R") (at 140.97 111.506 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 93021585-0162-4c98-a5c4-56470a3ecc60)
-    (property "Reference" "R16/+1/R5" (at 140.97 106.68 90)
+    (property "Reference" "+/R16/R5" (at 140.97 106.68 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1000k" (at 140.97 109.22 90)
@@ -3535,7 +3543,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R16/+1/R5") (unit 1)
+          (reference "+/R16/R5") (unit 1)
         )
       )
     )
@@ -3544,7 +3552,7 @@
   (symbol (lib_id "Device:C_Small") (at 148.844 111.506 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 95ecfb9c-c944-4a83-8efb-2e60873b6951)
-    (property "Reference" "C1/+/-1" (at 148.9456 114.6048 90)
+    (property "Reference" "+/C1/-1" (at 148.9456 114.6048 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u" (at 148.8503 108.204 90)
@@ -3561,7 +3569,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C1/+/-1") (unit 1)
+          (reference "+/C1/-1") (unit 1)
         )
       )
     )
@@ -3595,10 +3603,10 @@
   (symbol (lib_id "Device:R") (at 139.573 45.466 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9a55340c-cdec-4f05-ac30-71c0f4d84927)
-    (property "Reference" "+/R28" (at 141.859 44.831 0)
+    (property "Reference" "+/+/R28" (at 142.24 44.831 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100k" (at 141.859 47.371 0)
+    (property "Value" "100k" (at 142.24 47.371 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (at 137.795 45.466 90)
@@ -3612,7 +3620,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/R28") (unit 1)
+          (reference "+/+/R28") (unit 1)
         )
       )
     )
@@ -3709,7 +3717,7 @@
   (symbol (lib_id "Device:R") (at 164.084 95.758 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a522e0ae-5c84-4cd9-91a0-24342fb5e33c)
-    (property "Reference" "R3/+/+1" (at 166.37 95.123 0)
+    (property "Reference" "+/R3/+1" (at 166.37 95.123 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1.5k" (at 166.37 97.663 0)
@@ -3726,7 +3734,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R3/+/+1") (unit 1)
+          (reference "+/R3/+1") (unit 1)
         )
       )
     )
@@ -3786,7 +3794,7 @@
   (symbol (lib_id "Device:R") (at 84.582 136.398 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ab8bb436-dae0-4fd7-bc55-2d89c7df4715)
-    (property "Reference" "R10/-1" (at 86.36 135.763 0)
+    (property "Reference" "R10/10/-1" (at 86.36 135.763 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470k" (at 86.36 138.303 0)
@@ -3803,7 +3811,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R10/-1") (unit 1)
+          (reference "R10/10/-1") (unit 1)
         )
       )
     )
@@ -3876,7 +3884,7 @@
   (symbol (lib_id "Device:C_Small") (at 57.404 114.046 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b333aa77-e39e-4de8-810b-5316343250e6)
-    (property "Reference" "C4/C2/C2" (at 61.214 114.554 90)
+    (property "Reference" "C4/C4/C2" (at 61.214 114.554 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10n" (at 53.594 114.046 90)
@@ -3893,7 +3901,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C4/C2/C2") (unit 1)
+          (reference "C4/C4/C2") (unit 1)
         )
       )
     )
@@ -3902,7 +3910,11 @@
   (symbol (lib_id "Device:R") (at 233.172 44.196 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b3fc18cc-ddb0-48b7-8dae-23034c521cc5)
+<<<<<<< Updated upstream
     (property "Reference" "+/R17" (at 228.854 43.688 0)
+=======
+    (property "Reference" "+/+/R17" (at 233.68 45.974 90)
+>>>>>>> Stashed changes
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 235.458 45.466 0)
@@ -3919,7 +3931,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/R17") (unit 1)
+          (reference "+/+/R17") (unit 1)
         )
       )
     )
@@ -3928,7 +3940,7 @@
   (symbol (lib_id "Device:R") (at 109.22 138.43 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b8dbfdfc-994c-4379-b15c-1e31e32a691e)
-    (property "Reference" "R12/-1" (at 104.14 138.43 90)
+    (property "Reference" "R12/R12/-1" (at 116.84 137.16 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100" (at 106.68 138.43 90)
@@ -3945,7 +3957,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R12/-1") (unit 1)
+          (reference "R12/R12/-1") (unit 1)
         )
       )
     )
@@ -3980,7 +3992,7 @@
   (symbol (lib_id "Device:R") (at 37.846 129.54 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bc330d8d-4c2c-486d-bd5b-fe5ad8686fff)
-    (property "Reference" "D1/R2/R2" (at 37.846 124.46 90)
+    (property "Reference" "D1/D1/R2" (at 37.846 124.46 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1000k" (at 37.846 127 90)
@@ -3997,7 +4009,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "D1/R2/R2") (unit 1)
+          (reference "D1/D1/R2") (unit 1)
         )
       )
     )
@@ -4006,7 +4018,7 @@
   (symbol (lib_id "Device:Q_NPN_ECB") (at 161.544 111.506 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bf55c52c-081a-476b-8865-0826aa77696b)
-    (property "Reference" "Q3/+1/+1" (at 167.64 110.871 0)
+    (property "Reference" "+/Q3/+1" (at 167.64 110.871 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Q_NPN_ECB" (at 167.64 113.411 0)
@@ -4024,7 +4036,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "Q3/+1/+1") (unit 1)
+          (reference "+/Q3/+1") (unit 1)
         )
       )
     )
@@ -4084,7 +4096,11 @@
   (symbol (lib_id "Device:R_Potentiometer") (at 181.356 47.752 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c869c55b-e191-4c5d-aecb-01a365e587be)
+<<<<<<< Updated upstream
     (property "Reference" "+/RV3" (at 184.15 51.562 90)
+=======
+    (property "Reference" "+/+/RV3" (at 186.182 52.578 90)
+>>>>>>> Stashed changes
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 181.61 49.784 90)
@@ -4102,7 +4118,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/RV3") (unit 1)
+          (reference "+/+/RV3") (unit 1)
         )
       )
     )
@@ -4111,7 +4127,7 @@
   (symbol (lib_id "Device:C_Small") (at 177.292 104.902 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c8c2c0c0-3f80-4a3e-918a-997ef6578d44)
-    (property "Reference" "C9/+/-1" (at 177.3936 108.0008 90)
+    (property "Reference" "+/C2/-1" (at 177.3936 108.0008 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1u" (at 177.2983 101.6 90)
@@ -4128,7 +4144,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C9/+/-1") (unit 1)
+          (reference "+/C2/-1") (unit 1)
         )
       )
     )
@@ -4164,7 +4180,7 @@
   (symbol (lib_id "Device:C_Small") (at 32.766 137.3124 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cd444104-26dd-4112-9b6b-f5a98f51e999)
-    (property "Reference" "C3/C1" (at 34.544 142.748 90)
+    (property "Reference" "C3/C3/C1" (at 29.972 142.24 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "56n" (at 28.956 137.3124 90)
@@ -4181,7 +4197,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C3/C1") (unit 1)
+          (reference "C3/C3/C1") (unit 1)
         )
       )
     )
@@ -4190,7 +4206,7 @@
   (symbol (lib_id "Device:R") (at 173.482 47.752 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cf586f6c-b6ae-40a0-8a43-b96c32135f8d)
-    (property "Reference" "+/R1" (at 172.974 50.292 90)
+    (property "Reference" "+/+/R1" (at 162.814 49.784 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 173.482 45.466 90)
@@ -4207,7 +4223,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/R1") (unit 1)
+          (reference "+/+/R1") (unit 1)
         )
       )
     )
@@ -4216,10 +4232,10 @@
   (symbol (lib_id "Device:R") (at 43.942 143.51 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cf9ea699-85c9-4c33-84d7-8a43013885c0)
-    (property "Reference" "R8/1/+1" (at 45.72 142.875 0)
+    (property "Reference" "R8/R8/+1" (at 45.72 142.875 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "1000k" (at 45.72 145.415 0)
+    (property "Value" "5k" (at 45.72 145.415 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" (at 45.72 143.51 90)
@@ -4233,7 +4249,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "R8/1/+1") (unit 1)
+          (reference "R8/R8/+1") (unit 1)
         )
       )
     )
@@ -4242,7 +4258,7 @@
   (symbol (lib_id "Device:C_Small") (at 77.978 111.506 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d2c5c9ed-6193-4300-8660-cff73509b87a)
-    (property "Reference" "C7/+/+1" (at 77.9843 106.426 90)
+    (property "Reference" "C7/C7/+1" (at 77.9843 106.426 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10n" (at 77.978 115.316 90)
@@ -4259,7 +4275,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "C7/+/+1") (unit 1)
+          (reference "C7/C7/+1") (unit 1)
         )
       )
     )
@@ -4268,7 +4284,7 @@
   (symbol (lib_id "Device:L") (at 116.84 90.678 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d2d1428c-bee7-48f6-ba56-f63bc9cdce18)
-    (property "Reference" "+/L3" (at 110.998 88.392 0)
+    (property "Reference" "+/+/L3" (at 115.316 84.328 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100m" (at 118.618 92.964 90)
@@ -4285,7 +4301,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/L3") (unit 1)
+          (reference "+/+/L3") (unit 1)
         )
       )
     )
@@ -4369,9 +4385,9 @@
   )
 
   (symbol (lib_id "Device:R") (at 219.456 48.006 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid df2a7089-bcf9-4ae4-a038-cb3861dc4922)
-    (property "Reference" "+/R30" (at 219.456 43.18 90)
+    (property "Reference" "+/+/R30" (at 221.234 50.8 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100k" (at 219.456 45.72 90)
@@ -4388,7 +4404,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/R30") (unit 1)
+          (reference "+/+/R30") (unit 1)
         )
       )
     )
@@ -4397,7 +4413,7 @@
   (symbol (lib_id "Device:D") (at 26.416 129.54 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid df5ba592-69f0-4282-89c8-18d496cb9774)
-    (property "Reference" "+/D1" (at 26.1112 131.826 0)
+    (property "Reference" "+/R5/D1" (at 26.1112 131.826 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "D" (at 26.416 127 0)
@@ -4420,7 +4436,7 @@
     (instances
       (project "KiKAD_Endplatine_V2"
         (path "/06aebb48-3bd9-4517-ad22-b5366be0f5d8"
-          (reference "+/D1") (unit 1)
+          (reference "+/R5/D1") (unit 1)
         )
       )
     )
