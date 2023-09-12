@@ -19,9 +19,9 @@ FONT_FACETS = 48;
 // Parameters for the 3.5mm Jacks
 JACK_X_SPACING = 10.668;
 JACK_Y_SPACING = 16.480;
-JACK_HOLE_RADIUS = 4.4;
+JACK_HOLE_RADIUS = 4.2;
 
-AUDIO_JACK_HOLE_RADIUS = 3.1;
+AUDIO_JACK_HOLE_RADIUS = 3;
 
 
 // Font Sizes
@@ -62,28 +62,8 @@ difference() {
         }
     };
     
-    // The line out Ports
-    translate([WIDTH / 2, 3/8 * HEIGHT +3, -0.1]){
-        cylinder(h = THICKNESS+0.2, r=JACK_HOLE_RADIUS, center=false, $fn=2*HOLE_FACETS);
-    }
-    translate([WIDTH / 2, 1/8 * HEIGHT +3, -0.1]){
-        cylinder(h = THICKNESS+0.2, r=JACK_HOLE_RADIUS, center=false, $fn=2*HOLE_FACETS);
-    }
-    
-    // The audio in Ports
-    translate([WIDTH / 2, 6/8 * HEIGHT, -0.1]){
-        cylinder(h = THICKNESS+0.2, r=AUDIO_JACK_HOLE_RADIUS, center=false, $fn=2*HOLE_FACETS);
-    }
-     translate([WIDTH / 2, 5/8 * HEIGHT, -0.1]){
-        cylinder(h = THICKNESS+0.2, r=AUDIO_JACK_HOLE_RADIUS, center=false, $fn=2*HOLE_FACETS);
-    }
-    
-    // PCB MOUNTING HOLES
-    translate([WIDTH -10 , HEIGHT * 1/2 - 55 / 2, -0.1]){
-        cylinder(h = THICKNESS+0.2, r=PCB_HOLE_RADIUS, center=false, $fn=2*HOLE_FACETS);
-        translate(PCB_HOLE_DISTANCE)
-        cylinder(h = THICKNESS+0.2, r=PCB_HOLE_RADIUS, center=false, $fn=2*HOLE_FACETS);
-    }
+
 
 }
+
 

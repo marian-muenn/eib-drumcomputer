@@ -7,7 +7,7 @@ void uart_init() {
   // write to higher byte
   UBRR0H = (uint8_t)(prescale >> 8);
   // enable the transmitter and receiver
-  UCSR0B |= (1 << RXEN0) | (1 << TXEN0);
+  UCSR0B |= (1 << RXEN0);
   // Use 8-bit character sizes
   UCSR0C |= (1 << UCSZ00) | (1 << UCSZ01);
 }

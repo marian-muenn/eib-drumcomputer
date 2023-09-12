@@ -17,18 +17,11 @@ HOLE_FACETS = 48;
 FONT_FACETS = 48;
 
 // Parameters for the 3.5mm Jacks
-JACK_X_SPACING = 10.668;
-JACK_Y_SPACING = 16.480;
-JACK_HOLE_RADIUS = 4.4;
+JACK_HOLE_RADIUS = 4.2;
+SWITCH_HOLE_RADIUS = 6.25;
+POT_RADIUS=3.5;
 
 AUDIO_JACK_HOLE_RADIUS = 3.1;
-
-
-// Font Sizes
-FONT_SIZE_L=10;
-FONT_SIZE_M=3.5;
-FONT_DEPTH=1.5;
-FONT="Corber:style=Regular";
 
 //PLATE_COLOR=[0.1, 0.1, 0.1];
 //TEXT_COLOR=[1.0, 1.0, 1.0];
@@ -37,8 +30,6 @@ TEXT_HEIGHT=1;
 PLATE_COLOR=[1.0, 1.0, 1.0];
 
 FONT_DISTANCE=2;
-MIDI_CONNECTOR_MARGIN=2.5;
-AUDIO_CONNECTOR_MARGIN=1.5;
 
 
 PCB_HOLE_DISTANCE = [0,55,0];
@@ -50,8 +41,6 @@ difference() {
     translate([0.15,0,0])
     color(PLATE_COLOR)
     cube([WIDTH-0.15, HEIGHT, THICKNESS]);
-    
-    
     // The four mounting holes
     for (x =[MOUNTING_HOLE_OFFSET_X, WIDTH - MOUNTING_HOLE_OFFSET_X]){
         for (y =[MOUNTING_HOLE_OFFSET_Y, HEIGHT - MOUNTING_HOLE_OFFSET_Y]){
@@ -61,29 +50,48 @@ difference() {
             };
         }
     };
-    
-    // The line out Ports
-    translate([WIDTH / 2, 3/8 * HEIGHT +3, -0.1]){
-        cylinder(h = THICKNESS+0.2, r=JACK_HOLE_RADIUS, center=false, $fn=2*HOLE_FACETS);
-    }
-    translate([WIDTH / 2, 1/8 * HEIGHT +3, -0.1]){
-        cylinder(h = THICKNESS+0.2, r=JACK_HOLE_RADIUS, center=false, $fn=2*HOLE_FACETS);
-    }
-    
-    // The audio in Ports
-    translate([WIDTH / 2, 6/8 * HEIGHT, -0.1]){
-        cylinder(h = THICKNESS+0.2, r=AUDIO_JACK_HOLE_RADIUS, center=false, $fn=2*HOLE_FACETS);
-    }
-     translate([WIDTH / 2, 5/8 * HEIGHT, -0.1]){
-        cylinder(h = THICKNESS+0.2, r=AUDIO_JACK_HOLE_RADIUS, center=false, $fn=2*HOLE_FACETS);
-    }
-    
-    // PCB MOUNTING HOLES
-    translate([WIDTH -10 , HEIGHT * 1/2 - 55 / 2, -0.1]){
-        cylinder(h = THICKNESS+0.2, r=PCB_HOLE_RADIUS, center=false, $fn=2*HOLE_FACETS);
-        translate(PCB_HOLE_DISTANCE)
-        cylinder(h = THICKNESS+0.2, r=PCB_HOLE_RADIUS, center=false, $fn=2*HOLE_FACETS);
+    // 3 Potis
+    for (dy=[0, 20, 40]){
+        // Potis
+        translate([WIDTH / 2, HEIGHT*2/6 +dy, -0.1]){
+            cylinder(
+                h = THICKNESS+0.2, 
+                r=POT_RADIUS, 
+                center=false, 
+                $fn=HOLE_FACETS
+            );
+        };
+    };
+    // 2 * 3.5mm Buchsen
+    for (dx=[-8, 8]){
+        translate([WIDTH / 2 + dx, HEIGHT/6 -2, -0.1]){
+            cylinder(
+                h = THICKNESS+0.2, 
+                r = AUDIO_JACK_HOLE_RADIUS, 
+                center=false, 
+                $fn=HOLE_FACETS
+            );
+        };        
     }
 
-}
+    translate([WIDTH / 2, HEIGHT*5/6, -0.1]){
+        cylinder(
+            h = THICKNESS+0.2, 
+            r = SWITCH_HOLE_RADIUS, 
+            center=false, 
+            $fn=HOLE_FACETS
+        );
+    };
+    for (dx=[-40, 40]){
+    translate([WIDTH -7, HEIGHT/2 +5 + dx, -0.1]){
+        cylinder(
+            h = THICKNESS+0.2, 
+            r = 1.5, 
+            center=false, 
+            $fn=HOLE_FACETS
+        );
+    };
+};  
+};
+
 

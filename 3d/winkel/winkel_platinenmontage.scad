@@ -4,15 +4,15 @@ FACETS=24;
 
 
 difference(){
-    cube([10, 10, THICKNESS]);
-    translate([10.5-THICKNESS, 5, -0.1]){
+    cube([7, 10, THICKNESS]);
+    translate([7-THICKNESS, 5, -0.1]){
         cylinder(r=HOLE_RADIUS, h=THICKNESS + 0.2, center=false, $fn=FACETS);
     }
 }
 rotate([0,-90,0]){
     difference(){
-        cube([10.5 + THICKNESS, 10, THICKNESS]);
-        translate([11, 5, -0.1]){
+        cube([12.5 + THICKNESS, 10, THICKNESS]);
+        translate([12, 5, -0.1]){
             cylinder(r=HOLE_RADIUS, h=THICKNESS + 0.2, center=false, $fn=FACETS);
         }
     }

@@ -3,6 +3,7 @@
 #include <stdint.h>
 #include <util/atomic.h>
 #include <util/delay.h>
+#define DATA_REGISTER_EMPTY_INTERRUPT (1 << UDRIE0)
 
 // enums
 // enum for the state machine
@@ -93,17 +94,17 @@ void handle_midi_message() {
 }
 void init_gpio() {
   // DDRB |= 0x00111111; // DOUT 8 to 13 are mapped to PORTB 0 to 6 => set them
-  // as
-  DDRB |= 0x00111111; // DOUT 8 to 13 are mapped to PORTB 0 to 6 => set them as
-                      // output pins
+  // as output
+  DDRB |= 0b00111111;
+
   // DDRD |= 0x11111100; // DOUT 2 to 7 are mapped to PORTD 2 to 7  => set them
-  // as
-  DDRD |= 0x11111100; // DOUT 2 to 7 are mapped to PORTD 2 to 7  => set them as
-  _delay_ms(10);
-  PORTB = 0x00000000;
+  // as OUTPUT
+  DDRD |= 0b11111100; // DOUT 2 to 7 are mapped to PORTD 2 to 7  => set them as
+  _delay_ms(2);
+  PORTB = 0b00000000;
   // set all outputs to 0, set PD0 to tri state
-  PORTD = 0x00000001;
-  _delay_ms(10);
+  PORTD = 0b00000000;
+  _delay_ms(2);
 }
 void set_outputs() {
   // Clear all output Pins
@@ -162,33 +163,24 @@ void set_outputs() {
 }
 
 // Interrupt for received Package -> call handle_midi_message
-// ISR(USART_RX_vect) { handle_midi_message(); }
-ISR(USART_RX_vect) {
-  static volatile char led = 0x0;
-  if (led) {
-    led = 0;
-    PORTB |= 0b00100000;
-  } else {
-    led = 1;
-    PORTB &= ~0b00100000;
-  }
-}
+ISR(USART_RX_vect) { handle_midi_message(); }
 int main(void) {
-  init_gpio();
   uart_init();
+  init_gpio();
   // enable global interrupts
-  SREG |= (1 << 7);
+  sei();
+  UCSR0B |= RX_COMPLETE_INTERRUPT;
   while (1) {
     // wait for one ms, then update all outputs
     //
-    _delay_ms(500);
+    _delay_ms(1);
     // use atomic block so that we dont have an interrupt messing up our output
     // configuration
-    // ATOMIC_BLOCK(ATOMIC_FORCEON) {
-    //  outputs_now = outputs_next;
-    //  outputs_next = 0x0;
-    // // set_outputs();
-    //}
+    ATOMIC_BLOCK(ATOMIC_FORCEON) {
+      outputs_now = outputs_next;
+      outputs_next = 0x0;
+      set_outputs();
+    }
   }
   return 0;
 }
