@@ -767,8 +767,8 @@
     (uuid fe591330-8ed3-4b0e-8a69-a93d45a4699e)
   )
 
-  (text "Alle R: 10k\n\nTechnisch sauberer wäre es die 8 Eingangssignale und das Ausgangssignal über 1µF Kondensatoren ein- bzw. Auszukoppeln.\nAus Kostengründen wurde darauf verzichtet\n"
-    (at 15.24 86.36 0)
+  (text "Alle R: 10k\n\nTechnisch sauberer wäre es die 8 Eingangssignale und das Ausgangssignal über 1µF Kondensatoren ein- bzw. Auszukoppeln.\nAus Kostengründen wurde darauf verzichtet\n\nImplementierung auf Lochrasterplatine, daher keine PCB-Datei\n\n"
+    (at 14.605 95.885 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0d5aa266-e3c6-4e0a-a3ed-52ab8aeb8ef1)
   )
