@@ -1,6 +1,7 @@
 # EIB Drumcomputer
 
 ## Projektstruktur
+~~~
 Das Projekt ist wie folgt strukturiert:
   ./3d/                                                 Dateien für den 3D-Druck
   ./3d/abstandshalter_stromversorgung/                  Abstandhalter zur Montage der Stromversorgung
@@ -19,3 +20,4 @@ Das Projekt ist wie folgt strukturiert:
   ./src                                                 Programmcode
   ./tex                                                 Latex Dokumente
   ./tex/beleg                                           Projektbeleg
+~~~

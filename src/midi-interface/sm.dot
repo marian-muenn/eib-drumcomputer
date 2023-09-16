@@ -1,12 +1,16 @@
 digraph finite_state_machine {
 	rankdir=LR;
-	node [shape = doublecircle]; reset;
+	node [shape = doublecircle];
 	node [shape = circle]; ready note_on note_data1 note_data2
-	 reset -> ready [label = "init"];
 	 ready -> note_on [label = "status_note_on"];
-	 ready -> ready [label = "data, status_other"];
+	 ready -> ready [label = "data, status_other,\nactive_sense"];
      note_on -> note_data1 [label = "data"];
+     note_on -> note_on[label = "active_sense"];
+     note_on -> ready[label = "status_other"];
      note_data1 -> note_data2 [label= "data"]
+     note_data1-> note_data1[label = "active_sense"];
      note_data2 -> ready [label= "status_other"]
+     note_data2-> note_data2[label = "active_sense"];
+     note_data1 -> ready [label= "status_other"]
      note_data2 -> note_data1 [label= "data"]
 }
