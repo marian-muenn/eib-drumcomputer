@@ -82,8 +82,8 @@ difference() {
             $fn=HOLE_FACETS
         );
     };
-    for (dx=[-40, 40]){
-    translate([WIDTH -7, HEIGHT/2 +5 + dx, -0.1]){
+    for (dx=[-73/2, 73/2]){
+    translate([WIDTH -7, HEIGHT/2 +6 + dx, -0.1]){
         cylinder(
             h = THICKNESS+0.2, 
             r = 1.5, 
