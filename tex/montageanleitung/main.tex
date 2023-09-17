@@ -1,0 +1,33 @@
+% Author - - Jon Arnt Kårstad, NTNU IMT
+\documentclass{article}
+
+% Importing document settings from our file "packages.sty"
+\usepackage{packages}
+
+% Beginning of document
+\begin{document}
+
+% Inserting title page
+\import{./}{title}
+
+% Defining front matter settings 
+\frontmatter
+
+% Inserting table of contents
+\tableofcontents
+
+% Inserting list of figures & list of tables
+\listoffigures
+
+% Defining main matter settings 
+\mainmatter
+
+% Introduction explaining this LaTeX-template
+\import{./Sections/}{Dokumentation}
+
+
+
+% Example section added directly into the main-file
+
+% End of document
+\end{document}
