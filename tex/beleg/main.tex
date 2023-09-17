@@ -1,0 +1,40 @@
+% Author - - Jon Arnt Kårstad, NTNU IMT
+\documentclass{article}
+
+% Importing document settings from our file "packages.sty"
+\usepackage{packages}
+
+% Beginning of document
+\begin{document}
+
+% Inserting title page
+\import{./}{title}
+
+% Defining front matter settings 
+\frontmatter
+
+% Inserting table of contents
+\tableofcontents
+
+% Inserting list of figures & list of tables
+\listoffigures
+\listoftables
+
+% Defining main matter settings 
+\mainmatter
+
+% Introduction explaining this LaTeX-template
+\import{./Sections/}{Einführung}
+\import{./Sections/}{Yamaha Electron D80}
+\import{./Sections}{MIDI-Interface}
+\import{./Sections/}{Analoger Aufbau}
+\import{./Sections/}{Platinenentwurf}
+\import{./Sections/}{Abschließende Erkenntnisse}
+
+
+% Example section added directly into the main-file
+\newpage
+\printbibliography[heading = bibintoc, title = Quellen]    % 'bibintoc' inserts our bibliography into the table of contents
+
+% End of document
+\end{document}

@@ -10,7 +10,7 @@ Das Projekt ist wie folgt strukturiert:
   ./3d/modul-2-poti/                                    Frontplatte für Drummodule mit 2 Potentiometern
   ./3d/modul_3_poti/                                    Frontplatte für Drummodule mit 3 Potentiometern
   ./3d/winkel/                                          Winkel zur Platinenmontage
-  ./doku/                                               Datenblätter und Spezifikationen
+  ./doku/                                               Montageanleitung, Bauteillisten, Datenblätter und Spezifikationen
   ./kicad/                                              Platinenentwürfe
   ./kicad/midi-interface                                Platine des MIDI-Interface-Moduls
   ./kicad/line-out                                      Schaltplan des Line-Out Moduls
