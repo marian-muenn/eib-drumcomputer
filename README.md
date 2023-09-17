@@ -17,6 +17,5 @@ Das Projekt ist wie folgt strukturiert:
   ./kicad/klangerzeugung                                Platine zur Klangerzeugung
   ./ltspice/                                            Simulationen
   ./src                                                 Programmcode
-  ./tex                                                 Latex Dokumente
-  ./tex/beleg                                           Projektbeleg
+  ./tex                                                 Latex Dokumente (Beleg und Montageanleitung)
 ~~~
