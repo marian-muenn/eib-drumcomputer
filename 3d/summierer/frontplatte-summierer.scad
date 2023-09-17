@@ -3,7 +3,7 @@ TE=5.08;
 // Plate Thickness. Default for Aluminium Eurorack Panels is 2mm
 THICKNESS=3;
 // Width in TE
-WIDTH=12*TE;
+WIDTH=8*TE;
 // Default Euorack module height
 HEIGHT=128.5;
 // Mounting Hole Offset from the top / bottom edge
@@ -56,27 +56,15 @@ difference() {
             };
         }
     };
-    
-    // The MIDI Port
-    translate([WIDTH / 2, 4/5 * HEIGHT, -0.1]){
-        // center hole
-        cylinder(h = THICKNESS+0.2, r=MIDI_CUTOUT_RADIUS, center=false, $fn=2*HOLE_FACETS);
-        translate([-11.1,0,0]){
-            cylinder(h = THICKNESS+0.2, r=1.7, center=false, $fn=HOLE_FACETS);
-
-        };
-        translate([11.1, 0, 0]){
-            cylinder(h = THICKNESS+0.2, r=1.7, center=false, $fn=HOLE_FACETS);
-        };
-    }
+   
     
     // The 3.5mm Jacks
     translate([
-        (WIDTH - 3 * JACK_X_SPACING) / 2,
+        (WIDTH - 2 * JACK_X_SPACING) / 2,
         15 +  2 *JACK_Y_SPACING,
         0
     ]){
-        for (i = [0:3]){
+        for (i = [0:2]){
             for (j=[0:2]){
                 translate([i*JACK_X_SPACING, -j*JACK_Y_SPACING, 0]){
                     cylinder(h=2*THICKNESS+0.2, r=JACK_HOLE_RADIUS, center=true, $fn=HOLE_FACETS);
@@ -86,39 +74,3 @@ difference() {
     }
 }
 
-
-
-    // Header Text
- color(TEXT_COLOR)
- translate([WIDTH / 2, HEIGHT - FONT_SIZE_L - HOLE_OFFSET_Y - 2, THICKNESS-0.1]){
-    linear_extrude(TEXT_HEIGHT)
-    text("midi", size=FONT_SIZE_L, halign="center", font=FONT, $fn=FONT_FACETS);
-}
-// TEXT
-translate([WIDTH / 2, 4/5 * HEIGHT - 15, THICKNESS-0.1]){
-       color(TEXT_COLOR)
-       linear_extrude(TEXT_HEIGHT)
-       text("midi in", size=FONT_SIZE_M, halign="center", font=FONT, $fn=FONT_FACETS);
-   }
-
-translate([
-    (WIDTH - 3 * JACK_X_SPACING) / 2,
-    15 +  2 *JACK_Y_SPACING,
-    0
-]){
-    for (i = [0:3]){
-        for (j=[0:2]){
-            translate([i*JACK_X_SPACING, -j*JACK_Y_SPACING, 0]){
-                translate([0, JACK_HOLE_RADIUS + AUDIO_CONNECTOR_MARGIN + FONT_DISTANCE, THICKNESS]){
-                    color(TEXT_COLOR)
-                    linear_extrude(TEXT_HEIGHT)
-                    text(str((4*j)+i+1), size=FONT_SIZE_M, halign="center", font=FONT, $fn=FONT_FACETS);
-                }
-            }
-        }
-    }}
-    color(TEXT_COLOR)
-    translate([WIDTH / 2 ,64,THICKNESS]){
-      linear_extrude(TEXT_HEIGHT)
-      text("trigger outputs", size=FONT_SIZE_M, halign="center", font=FONT, $fn=FONT_FACETS);
-    }

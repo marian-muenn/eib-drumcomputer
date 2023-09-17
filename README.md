@@ -14,8 +14,7 @@ Das Projekt ist wie folgt strukturiert:
   ./kicad/                                              Platinenentwürfe
   ./kicad/midi-interface                                Platine des MIDI-Interface-Moduls
   ./kicad/line-out                                      Schaltplan des Line-Out Moduls
-  ./kicad/drummodul
-  ./kicad/Finale Platine
+  ./kicad/klangerzeugung                                Platine zur Klangerzeugung
   ./ltspice/                                            Simulationen
   ./src                                                 Programmcode
   ./tex                                                 Latex Dokumente
