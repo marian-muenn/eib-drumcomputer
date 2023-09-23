@@ -1,4 +1,4 @@
-21670513944272417
+21667139260606144
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84594,20 +84594,6 @@ Logo WEEE
 0
 0
 0
-TL074
-DIP762W51P254L1994H508Q14
-
-
-0
-14
-14
-TL074
-L_Axial_L26.0mm_D14.0mm_P30.48mm_Horizontal_Fastron_JORIS
-Inductor, Axial series, Axial, Horizontal, pin pitch=30.48mm, , length*diameter=26*9mm^2, Fastron, 77A, http://cdn-reichelt.de/documents/datenblatt/B400/DS_77A.pdf
-Inductor Axial series Axial Horizontal pin pitch 30.48mm  length 26mm diameter 9mm Fastron 77A
-0
-2
-2
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf
