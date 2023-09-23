@@ -3033,7 +3033,7 @@
     (property "Value" "Conn_01x02_Pin" (at 251.206 119.126 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Connector_JST:JST_EH_S2B-EH_1x02_P2.50mm_Horizontal" (at 262.128 111.506 0)
+    (property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" (at 262.128 111.506 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 262.128 111.506 0)
