@@ -58,19 +58,40 @@ difference() {
     };
    
     
-    // The 3.5mm Jacks
+    // The 3.5mm input Jacks
     translate([
-        (WIDTH - 2 * JACK_X_SPACING) / 2,
+        (WIDTH - 1 * JACK_X_SPACING) / 2,
         15 +  2 *JACK_Y_SPACING,
         0
     ]){
-        for (i = [0:2]){
-            for (j=[0:2]){
-                translate([i*JACK_X_SPACING, -j*JACK_Y_SPACING, 0]){
-                    cylinder(h=2*THICKNESS+0.2, r=JACK_HOLE_RADIUS, center=true, $fn=HOLE_FACETS);
+        for (i = [0:1]){
+            for (j=[-2:1]){
+                translate([i*JACK_X_SPACING, (j+1/2)*JACK_Y_SPACING, 0]){
+                    cylinder(h=2*THICKNESS+0.2, r=JACK_HOLE_RADIUS+0.1, center=true, $fn=HOLE_FACETS);
                 }
             }
         }
     }
-}
+       // The 6.3mm output Jack
+    translate([
+        WIDTH  / 2,
+        4.5/6 * HEIGHT,
+        0
+    ]){
+       cylinder(h=2*THICKNESS+0.2, r=4.5+0.1, center=true, $fn=HOLE_FACETS);
+      };
+      
+    for (dx=[-73/2, 73/2]){
+    translate([WIDTH -7, HEIGHT/2 +6+ dx, -0.1]){
+        cylinder(
+            h = THICKNESS+0.2, 
+            r = 1.5, 
+            center=false, 
+            $fn=HOLE_FACETS
+        );
+    };
+    }
+ }
+
+
 
